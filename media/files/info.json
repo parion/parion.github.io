@@ -1,0 +1,19 @@
+{
+	"name": "Griffin Wiebel",
+	"age": 20,
+	"education": {
+		"college": "Arizona State University",
+		"degree": "Honors Bachelor of Science ",
+		"major": "Computer Science",
+		"year": 2018
+	},
+	"location": "Tempe, Arizona",
+	"contact-info": {
+		"email": "griffinwiebel@gmail.com",
+		"resume": "/media/files/Resume.pdf",
+		"linked-in": "https://www.linkedin.com/in/gwiebel",
+		"github": "https://github.com/parion",
+		"facebook": "https://www.facebook.com/griffasu",
+		"instagram": "https://www.instagram.com/wiebels.wobble/"
+	}
+}
