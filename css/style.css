@@ -86,9 +86,19 @@ header .btn{
 .social-links i{
 	color: #EEEEEE;
 	padding: 0 20px;
+  transition: all 500ms ease-out;
 }
-.social-links i:hover{
+.social-links i.fa-linkedin-square:hover{
+	color: #0077B5;
+}
+.social-links i.fa-github-square:hover{
 	color: #afafaf;
+}
+.social-links i.fa-facebook-square:hover{
+	color: #3b5998;
+}
+.social-links i.fa-instagram:hover{
+	color: #9b6954;
 }
 
 /* Section Styling */
@@ -101,11 +111,12 @@ section h1,h2,h3,h4{
 
 /* About Styling */
 section#about{
-	background: #EEE;
+	background: url('../media/img/bg/wall-desk.jpg');
+	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  	min-height: 100vh; /* These two lines are counted as one :-)       */
 }
 .about-pic{
 	width: 400px;
-	margin-bottom: 20px;
 	-moz-box-shadow:    10px 10px 20px 10px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.5);
 	box-shadow:         10px 10px 20px 10px rgba(0,0,0,0.5);
@@ -119,7 +130,7 @@ section#about{
 
 /*Skills/Services Styling */
 section#skills{
-	background: #16191A; 
+	background: #16191A;
 	color: #EEEEEE;
 }
 section#skills h4{
@@ -133,14 +144,38 @@ section#skills h4{
 	text-align: center;
 	margin: 0 auto;
 }
-h4#prof{
+#prof>h4{
 	border-bottom: medium solid #5cb85c;
 }
-h4#inter{
+#inter>h4{
 	border-bottom: medium solid #0275d8;
 }
-h4#adv{
+#adv>h4{
 	border-bottom: medium solid #d9534f;
+}
+.slide-down {
+  opacity: 0;
+  transition: all 500ms ease-out;
+  -webkit-transform: translate3d(0px, -200px, 0px);
+  -ms-transform: translate(0px, -200px);
+  transform: translate3d(0px, -200, 0px);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.slide-down.in-view {
+  opacity: 1;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate3d(0px, 0px, 0px);
+}
+#inter .slide-down{
+	-webkit-transition-delay: 400ms; /* Safari */
+    transition-delay: 400ms;
+}
+#adv .slide-down{
+	-webkit-transition-delay: 800ms; /* Safari */
+    transition-delay: 800ms;
 }
 
 /*Work Styling */
