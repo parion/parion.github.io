@@ -179,18 +179,9 @@ section#skills h4{
 .slide-down {
   opacity: 0;
   transition: all 500ms ease-out;
-  -webkit-transform: translate3d(0px, -200px, 0px);
-  -ms-transform: translate(0px, -200px);
-  transform: translate3d(0px, -200, 0px);
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 .slide-down.in-view {
   opacity: 1;
-  -webkit-transform: translate3d(0px, 0px, 0px);
-  -ms-transform: translate(0px, 0px);
-  transform: translate3d(0px, 0px, 0px);
 }
 #inter .slide-down{
 	-webkit-transition-delay: 400ms; /* Safari */
