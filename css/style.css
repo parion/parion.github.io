@@ -1,267 +1,344 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Reem+Kufi');
 
 /* General Styling */
-body{
-	font-family: 'Open Sans', sans-serif;
-	padding-bottom: 44px;
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 44px;
 }
-h1,h2,h3,h4{
-	font-family: 'Reem Kufi', sans-serif;
+
+h1, h2, h3, h4 {
+    font-family: 'Reem Kufi', sans-serif;
 }
-.btn{
-	transition: all 0.5s ease 0s;
+
+.btn {
+    transition: all 0.5s ease 0s;
 }
-p.tagline{
-	font-style: italic;
-	text-align: center;
+
+p.tagline {
+    font-style: italic;
+    text-align: center;
 }
-.center-block{
-	margin: 0 auto;
-	display: block;
+
+.center-block {
+    margin: 0 auto;
+    display: block;
 }
-.img-responsive{
-	max-width: 100%;
+
+.img-responsive {
+    max-width: 100%;
 }
+
 
 /*Navbar Styling */
+
 @keyframes dropNav {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
-.navbar{
-	background-color: rgba(22, 25, 26, 0.8);
-	padding: 10px 0;
-	-moz-box-shadow:    0px 5px 25px 15px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0px 5px 25px 15px rgba(0,0,0,0.5);
-	box-shadow:         0px 5px 25px 15px rgba(0,0,0,0.5);
-	animation-name: dropNav;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-out;
-	animation-duration: 0.5s;
+.navbar {
+    background-color: rgba(22, 25, 26, 0.8);
+    padding: 10px 0;
+    -moz-box-shadow: 0px 5px 25px 15px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 5px 25px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 25px 15px rgba(0, 0, 0, 0.5);
+    animation-name: dropNav;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    animation-duration: 0.5s;
 }
-.navbar-centered{
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	width: 100%;
-	left: 0;
-	top: 0;
+
+.navbar-centered {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
-.navbar-centered>.navbar-brand>img{
-	display: flex;
-	align-items: center;
-	max-width: 75px;
-	position: absolute;
+
+.navbar-centered>.navbar-brand>img {
+    display: flex;
+    align-items: center;
+    max-width: 75px;
+    position: absolute;
     bottom: -25px;
 }
-.nav-item{
-	color: #EEEEEE;
-	padding: 0 20px;
+
+.nav-item {
+    color: #EEEEEE;
+    padding: 0 20px;
 }
+
 
 /*Header Syling */
-header{
-	background: #16191A url('../media/img/griffin-logo-big.png') no-repeat;
-	background-position: left 600px bottom -450px;
-	color: #EEEEEE;
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+header {
+    background: #16191A url('../media/img/griffin-logo-big.png') no-repeat;
+    background-position: left 600px bottom -450px;
+    color: #EEEEEE;
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
 }
-header>.container{
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  	min-height: 100vh; /* These two lines are counted as one :-)       */
+
+header>.container {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
 }
-header .row{
-	min-height: 85%;  /* Fallback for browsers do NOT support vh unit */
-  	min-height: 85vh; /* These two lines are counted as one :-)       */
+
+header .row {
+    min-height: 85%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 85vh;
+    /* These two lines are counted as one :-)       */
 }
-header h1{
-	font-size: 4em;
+
+header h1 {
+    font-size: 4em;
 }
-header ul{
-	list-style: none;
+
+header ul {
+    list-style: none;
 }
-header ul li{
-	font-size: 1.5em;
+
+header ul li {
+    font-size: 1.5em;
 }
-header .btn{
-	margin-top: 20px;
-	margin-left: 40px;
+
+header .btn {
+    margin-top: 20px;
+    margin-left: 40px;
 }
-.social-links{
-	padding-bottom: 10%;
+
+.social-links {
+    padding-bottom: 10%;
 }
-.social-links i{
-	color: #EEEEEE;
-	padding: 0 20px;
-  transition: all 500ms ease-out;
+
+.social-links i {
+    color: #EEEEEE;
+    padding: 0 20px;
+    transition: all 500ms ease-out;
 }
-.social-links i.fa-linkedin-square:hover{
-	color: #0077B5;
+
+.social-links i.fa-linkedin-square:hover {
+    color: #0077B5;
 }
-.social-links i.fa-github-square:hover{
-	color: #afafaf;
+
+.social-links i.fa-github-square:hover {
+    color: #afafaf;
 }
-.social-links i.fa-facebook-square:hover{
-	color: #3b5998;
+
+.social-links i.fa-twitter:hover {
+    color: #00aced;
 }
-.social-links i.fa-instagram:hover{
-	color: #9b6954;
+
+.social-links i.fa-instagram:hover {
+    color: #9b6954;
 }
+
 
 /* Section Styling */
-section{
-	padding: 50px 0;
+
+section {
+    padding: 50px 0;
 }
-section h1,h2,h3,h4{
-	text-align: center;
+
+section h1, h2, h3, h4 {
+    text-align: center;
 }
-.center-text{
-	text-align: center;
-	margin: 0 auto;
+
+.center-text {
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 /* About Styling */
-section#about{
-	background: url('../media/img/bg/wall-desk.jpg') top center;
-	min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  	min-height: 100vh; /* These two lines are counted as one :-)       */
-}
-.about-pic{
-	width: 400px;
-	-moz-box-shadow:    10px 10px 20px 10px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.5);
-	box-shadow:         10px 10px 20px 10px rgba(0,0,0,0.5);
-}
-.about-btns{
-	text-align: center;
-}
-.about-btns .btn{
-	margin: 10px;
-}
-.currently{
-	padding-top: 2em;
-}
-.currently span{
-	font-weight: bold;
+
+section#about {
+    background: url('../media/img/bg/wall-desk.jpg') top center;
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
 }
 
+.about-pic {
+    width: 400px;
+    -moz-box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-btns {
+    text-align: center;
+}
+
+.about-btns .btn {
+    margin: 10px;
+}
+
+.currently {
+    padding-top: 2em;
+}
+
+.currently span {
+    font-weight: bold;
+}
+
+
 /*Skills/Services Styling */
-section#skills{
-	background: #16191A;
-	color: #EEEEEE;
+
+section#skills {
+    background: #16191A;
+    color: #EEEEEE;
 }
-section#skills h4{
-	margin-bottom: 10px;
+
+section#skills h4 {
+    margin-bottom: 10px;
 }
-.tagline{
-	padding-bottom: 20px;
+
+.tagline {
+    padding-bottom: 20px;
 }
-.lang-row{
-	max-width: 200px;
-	text-align: center;
-	margin: 0 auto;
+
+.lang-row {
+    max-width: 200px;
+    text-align: center;
+    margin: 0 auto;
 }
-#prof>h4{
-	border-bottom: medium solid #5cb85c;
+
+#prof>h4 {
+    border-bottom: medium solid #5cb85c;
 }
-#inter>h4{
-	border-bottom: medium solid #0275d8;
+
+#inter>h4 {
+    border-bottom: medium solid #0275d8;
 }
-#adv>h4{
-	border-bottom: medium solid #d9534f;
+
+#adv>h4 {
+    border-bottom: medium solid #d9534f;
 }
+
 .slide-down {
-  opacity: 0;
-  transition: all 500ms ease-out;
+    opacity: 0;
+    transition: all 500ms ease-out;
 }
+
 .slide-down.in-view {
-  opacity: 1;
+    opacity: 1;
 }
-#inter .slide-down{
-	-webkit-transition-delay: 400ms; /* Safari */
+
+#inter .slide-down {
+    -webkit-transition-delay: 400ms;
+    /* Safari */
     transition-delay: 400ms;
 }
-#adv .slide-down{
-	-webkit-transition-delay: 800ms; /* Safari */
+
+#adv .slide-down {
+    -webkit-transition-delay: 800ms;
+    /* Safari */
     transition-delay: 800ms;
 }
 
+
 /*Work Styling */
-section#work{
-	background: #EEE;
-}
-section#work div{
-	text-align: center;
+
+section#work {
+    background: #EEE;
 }
 
-/* Site Grid CSS */
-.photo-grid img {
-	display: block;
-	height: auto;
-	max-width: 100%;
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
+section#work div {
+    text-align: center;
 }
 
-.photo-grid div:hover figcaption {
-	opacity: 1;
+.work-carousel {
+  background: #EEE;
+  height: 400px;
 }
 
-.photo-grid div:hover img {
-	-webkit-filter: blur(5px);
-	filter: blur(5px);
+.carousel-cell {
+  width: 33%;
+  height: 100%;
+  margin-right: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.photo-grid figcaption p {
-	display: table-cell;
-	font-size: 1.5em;
-	position: relative;
-	top: -40px;
-	-webkit-transition: all 300ms ease-out;
-	-moz-transition: all 300ms ease-out;
-	transition: all 300ms ease-out;
+.carousel-cell img{
+    width: 100%;
 }
 
-.photo-grid div:hover figcaption p {
-	-moz-transform: translateY(40px);
-	-webkit-transform: translateY(40px);
-	transform: translateY(40px);
+.carousel-cell a{
+    text-decoration: none;
 }
-.photo-grid figcaption {
-	color: white;
-	display: table;
-	width: 100%;
-	left: 50%;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	z-index: 100;
-	transform: translate(-50%, -50%);
-	-webkit-transition: all 300ms;
-	-moz-transition: all 300ms;
-	transition: all 300ms;
-	-webkit-transition-delay: 100ms;
-	-moz-transition-delay: 100ms;
-	transition-delay: 100ms;
+
+.carousel-cell p{
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #00aced; 
 }
+
+@media (max-width: 768px ) {
+  .carousel-cell{
+      width: 50%;
+  }
+}
+
+@media (max-width: 500px ) {
+  .carousel-cell{
+      width: 100%;
+  }
+}
+
+/* Instafeed */
+section#instafeed-block{
+    background: linear-gradient(#EEE 70%, #16191A);
+}
+#instafeed{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+#instafeed a img{
+    padding: 10px;
+    background-color: #16191A;
+    transition: all 0.5s ease;
+    margin: 5px 0;
+}
+#instafeed a img:hover{
+    box-shadow: 5px 5px #16191A;
+}
+
+
 
 /* Contact Styling*/
-section#contact{
-	background: #16191A;
-	color: #EEEEEE;
+
+section#contact {
+    background: #16191A;
+    color: #EEEEEE;
 }
-section#contact .btn{
-	text-align: center;
+
+section#contact .btn {
+    text-align: center;
 }
-pre{
-	max-width: 800px;
-	margin: 0 auto !important;
-	display: block;
+
+pre {
+    max-width: 800px;
+    margin: 0 auto !important;
+    display: block;
 }

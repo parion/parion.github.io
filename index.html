@@ -18,24 +18,28 @@
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Griffin Wiebel Portfolio">
-    <meta property="og:description" content="Welcome to Griffin's portfolio website, displaying all the skills & services he offers along with his previous work." />
+    <meta property="og:description" content="Welcome to Griffin's portfolio website, displaying all the skills & services he offers along with his previous work."
+    />
     <meta property="og:image" content="http://griffinwiebel.com/media/img/social.png" />
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
+        crossorigin="anonymous">
     <!-- Enabling Bootstrap Flexbox -->
     <link rel="stylesheet" href="css/bootstrap-flex.min.css">
     <!-- Prism CSS -->
     <link rel="stylesheet" href="css/prism.css">
     <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <!-- Google Analytics Tracking -->
     <script>
-        (function(i, s, o, g, r, a, m) {
+        (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
+            i[r] = i[r] || function () {
                 (i[r].q = i[r].q || []).push(arguments)
             }, i[r].l = 1 * new Date();
             a = s.createElement(o),
@@ -83,8 +87,8 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/gwiebel"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
                 <a href="https://github.com/parion"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/griffasu"><i class="fa fa-3x fa-facebook-square" aria-hidden="true"></i></a>
                 <a href="https://www.instagram.com/wiebels.wobble/"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/wiebelswobble"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
             </div>
         </div>
     </header>
@@ -97,9 +101,12 @@
                 <div class="col-md-6">
                     <h2>About</h2>
                     <p class="tagline"><i>Nice to meet you. I'm Griffin.</i></p>
-                    <p>I am a Junior at Arizona State University, a front-end web developer with aspirations to move into full-stack development, and a freelancer.</p>
-                    <p>I'm not just a web developer, though. I am proficient in a number of programming languages from Assembly all the way to popular high level languages, such as C++ and Java.</p>
-                    <p>When I'm not coding, I can be found at the gym, doing podcasts with my friend Matthew Hollenback, and exploring restaurants in the Tempe area with my girlfriend.</p>
+                    <p>I am a <span>Junior at Arizona State University</span>, a <span>front-end web developer</span> with aspirations to move into full-stack
+                        development, and a freelancer.</p>
+                    <p>I'm not just a web developer. I am proficient in a number of programming languages from Assembly
+                        all the way to popular high level languages, such as C++ and Java.</p>
+                    <p>When I'm not coding, I can be found <span>at the gym</span>, <span>doing podcasts</span> with my friend Matthew Hollenback, and
+                        <span>exploring restaurants</span> in the Tempe area with my girlfriend.</p>
                     <div class="about-btns">
                         <a class="btn btn-outline-success" href="#contact">Let's talk</a>
                         <a class="btn btn-outline-primary" href="#work">See my work</a>
@@ -112,7 +119,8 @@
     <section id="skills">
         <div class="container">
             <h2>Skills &amp; Services</h2>
-            <p class="tagline">I create functional and visually appealing websites with my clients that showcase and highlight their products or services.</p>
+            <p class="tagline">I create functional and visually appealing websites with my clients that showcase and highlight their products
+                or services.</p>
             <div class="row">
                 <div class="col-md-4">
                     <div class="lang-row" id="prof">
@@ -155,75 +163,40 @@
         <div class="container">
             <h2>Work</h2>
             <p class="tagline"><i>Case studies coming soon!</i></p>
+        </div>
 
-            <div class="row photo-grid">
-                <div class="col-md-6">
-                    <a href="https://petrode.com/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/petrode-landing.jpg" alt="PetroDE Landing">
-                            <figcaption>
-                                <p>PetroDE &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="http://lariatsp.com/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/lariatsp-landing.png" alt="LariatSP Landing">
-                            <figcaption>
-                                <p>Lariat Software Professionals &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+        <div class="work-carousel">
+            <div class="carousel-cell">
+                <a href="#">
+                    <img src="media/img/work/portfolio-preview.png" alt="Portfolio Preview" data-site="portfolio">
+                    <p>Portfolio</p>
+                </a>
             </div>
-
-            <div class="row photo-grid">
-                <div class="col-md-6">
-                    <a href="http://curiotech.me/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/gravbot-landing.jpg" alt="GravBot Landing">
-                            <figcaption>
-                                <p>Curio &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="https://web.archive.org/web/20140208162355/http://pomona-hs.jeffco.k12.co.us/pomona-hs/html/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/pomona-landing.png" alt="Pomona Landing">
-                            <figcaption>
-                                <p>Pomona High School &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+            <div class="carousel-cell" data-site="curio">
+                <a href="http://curiotech.me/">
+                    <img src="media/img/work/curio-preview.png" alt="">
+                    <p>Curio</p>
+                </a>
             </div>
-
-            <div class="row photo-grid">
-                <div class="col-md-6">
-                    <a href="http://bolderminds.com/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/bolder-landing.png" alt="Bolder Landing">
-                            <figcaption>
-                                <p>Bolder Minds &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <div class="col-md-6">
-                    <a href="http://premiumlimodenver.com/" target="_blank">
-                        <figure>
-                            <img src="media/img/work/premium-landing.png" alt="Premium Landing">
-                            <figcaption>
-                                <p>Premium Limo &rarr;</p>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
+            <div class="carousel-cell" data-site="pomona">
+                <a href="https://web.archive.org/web/20140208162355/http://pomona-hs.jeffco.k12.co.us/pomona-hs/html/">
+                    <img src="media/img/work/pomona-preview.png" alt="">
+                    <p>Pomona High School</p>
+                </a>
             </div>
+            <div class="carousel-cell" data-site="petrode">
+                <a href="https://petrode.com/">
+                    <img src="media/img/work/petrode-preview.png" alt="">
+                    <p>PetroDE</p>
+                </a>
+            </div>
+        </div>
+        <div id="work_hover_text"></div>
+    </section>
+    <section id="instafeed-block">
+        <div class="container">
+            <h4>See what I'm up to on Instagram!</h4>
+            <div id="instafeed"></div>
         </div>
     </section>
 
@@ -257,9 +230,12 @@
     </section>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK"
+        crossorigin="anonymous"></script>
 
     <!-- FontAwesome script -->
     <script async src="https://use.fontawesome.com/5d01ebd258.js"></script>
@@ -270,8 +246,14 @@
     <!-- Rellax script -->
     <script async src="js/rellax.min.js"></script>
 
+    <!-- Flickity script -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Prism script -->
     <script async src="js/prism.js"></script>
+
+    <!-- Instafeeds script -->
+    <script async src="js/instafeed.min.js"></script>
 
     <!-- Default script -->
     <script async src="js/default.js"></script>
