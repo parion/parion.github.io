@@ -63,6 +63,17 @@ $(document).ready(function () {
 		setGalleryHeight: false
 	});
 
+	// Initialize Typed
+	Typed.new('#typed-info', {
+		strings: ["ASU undergraduate.", "UI/UX designer.", "full stack web developer."],
+		typeSpeed: 0,
+		startDelay: 1000,
+		backDelay: 1200,
+		callback: function() {
+			$('#btn-more').css("opacity", "1");
+		}
+	});
+
 	// $('.carousel-cell').hover(function() {
 	// 	$('work_hover_text').html("<p>" + ( $(this).data('site') ) + "</p>") ;
 	// });

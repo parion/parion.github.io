@@ -24,10 +24,7 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
-        crossorigin="anonymous">
-    <!-- Enabling Bootstrap Flexbox -->
-    <link rel="stylesheet" href="css/bootstrap-flex.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Prism CSS -->
     <link rel="stylesheet" href="css/prism.css">
     <!-- Style CSS -->
@@ -56,39 +53,32 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-bottom navbar-light bg-faded">
-        <div class="container">
-            <div class="navbar-centered">
-                <a class="navbar-brand" href="#the-header">
-                    <img src="media/img/logo-inverse.png" alt="">
-                </a>
-            </div>
-            <a href="#about" class="nav-item nav-link">About</a>
-            <a href="#skills" class="nav-item nav-link">Skills</a>
-            <div class="float-md-right">
-                <a href="#work" class="nav-item nav-link">Work</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <header id="the-header">
-        <div class="container">
-            <div class="row flex-items-xs-middle">
-                <div class="col-md-6">
+    <header>
+        <div class="header-body">
+            <div class="container">
+                <div id="header-info">
                     <h1>Hi, I'm Griffin</h1>
-                    <ul>
-                        <li>Full Stack Web Developer</li>
-                        <li>UI/UX Designer</li>
-                        <li>Undergraduate</li>
-                    </ul>
-                    <a class="btn btn-outline-success" href="#about">More about me</a>
+                    <p>I'm a <span id="typed-info"></span></p>
+                    <a id="btn-more" class="btn btn-outline-success btn-hidden" href="#about">More about me</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/gwiebel"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/parion"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/wiebels.wobble/"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/wiebelswobble"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/gwiebel"><i class="fa fa-3x fa-linkedin-square" aria-hidden="true"></i></a>
-                <a href="https://github.com/parion"><i class="fa fa-3x fa-github-square" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/wiebels.wobble/"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
-                <a href="https://twitter.com/wiebelswobble"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
+        </div>
+        <div class="navbar-container">
+            <div class="container">
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -229,6 +219,12 @@
         </div>
     </section>
 
+    <!--<button id="hamburger">
+        <span>
+            toggle menu
+        </span>
+    </button>-->
+
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7"
         crossorigin="anonymous"></script>
@@ -242,6 +238,9 @@
 
     <!-- Scroll revewal -->
     <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+    <!-- Typed script -->
+    <script src="js/typed.js"></script>
 
     <!-- Rellax script -->
     <script async src="js/rellax.min.js"></script>
