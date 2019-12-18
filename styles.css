@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('./assets/fonts/IBMPlexSans-Regular.woff2') format('woff2'), 
+    url('./assets/fonts/IBMPlexSans-Regular.woff') format('woff');
+}
+
+body {
+  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+}
+h1, b {
+  text-align: center;
+  display: block;
+}
