@@ -1,13 +1,119 @@
+@import 'reset.css';
 @font-face {
   font-family: 'IBM Plex Sans';
   src: url('./assets/fonts/IBMPlexSans-Regular.woff2') format('woff2'), 
     url('./assets/fonts/IBMPlexSans-Regular.woff') format('woff');
 }
 
+/* Setting global color defintions */
+:root {
+  --red-accent: #FF4136;
+  --dark-accent: #1a1a1a;
+  --light-accent: #fff;
+  --foreground: var(--dark-accent);
+  --background: var(--light-accent);
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  max-width: 1024px;
+  margin: 0 auto;
+  color: var(--foreground);
+  background: var(--background);
+  transition: all 1s;
 }
-h1, b {
-  text-align: center;
-  display: block;
+
+a {
+  color: #555555;
+  transition: color 0.5s;
+}
+  a:hover {
+    color: var(--foreground);
+  }
+
+  span.accent {
+    color: var(--red-accent);
+  }
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+
+/* Content */
+
+.floating-action {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: 2px solid var(--foreground);
+  border-radius: 10px;
+  height: 40px;
+  overflow: hidden;
+}
+  .floating-action .theme-change {
+    transform: translateY(0);
+    transition: transform 1s;
+  }
+  .floating-action .theme-change.dark-mode {
+    transform: translateY(-40px);
+  }
+  .floating-action svg {
+    display: block;
+    padding: 0.5rem;
+    color: var(--foreground);
+  }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  nav .nav-logo {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--foreground);
+    transition: color 1s;
+  }
+    nav .nav-logo:hover {
+      color: var(--red-accent);
+    }
+  
+  nav .nav-float {
+    display: flex;
+    align-items: center;
+  } 
+    nav .nav-float>a {
+      margin: 1rem;
+    }
+
+header {
+  min-height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  header h2 {
+    margin-bottom: 2rem;
+  }
+
+section {
+  margin: 2rem 0;
 }
