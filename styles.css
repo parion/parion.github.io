@@ -1,27 +1,29 @@
-@import 'reset.css';
+@import "reset.css";
 @font-face {
-  font-family: 'IBM Plex Sans';
-  src: url('./assets/fonts/IBMPlexSans-Regular.woff2') format('woff2'), 
-    url('./assets/fonts/IBMPlexSans-Regular.woff') format('woff');
+  font-family: "IBM Plex Sans";
+  src: url("./assets/fonts/IBMPlexSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/IBMPlexSans-Regular.woff") format("woff");
 }
 
 /* Setting global color defintions */
 :root {
-  --red-accent: #FF4136;
+  --red-accent: #ff4136;
   --dark-accent: #1a1a1a;
   --light-accent: #fff;
   --foreground: var(--dark-accent);
   --background: var(--light-accent);
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
-  font-family: 'IBM Plex Sans', Helvetica, Arial, sans-serif;
+  font-family: "IBM Plex Sans", Helvetica, Arial, sans-serif;
   font-size: 16px;
   max-width: 1024px;
+  padding: 0 1rem;
   margin: 0 auto;
   color: var(--foreground);
   background: var(--background);
@@ -32,13 +34,13 @@ a {
   color: #555555;
   transition: color 0.5s;
 }
-  a:hover {
-    color: var(--foreground);
-  }
+a:hover {
+  color: var(--foreground);
+}
 
-  span.accent {
-    color: var(--red-accent);
-  }
+span.accent {
+  color: var(--red-accent);
+}
 
 h1 {
   font-size: 4rem;
@@ -51,6 +53,28 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
+}
+small {
+  font-size: 0.75rem;
+}
+
+button {
+  border: 2px solid var(--red-accent);
+  background: transparent;
+  color: var(--red-accent);
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all 0.25s;
+}
+button:hover {
+  background: var(--red-accent);
+  color: var(--background);
+  transform: translateY(-2px);
+  box-shadow: 0 3.1px 2.9px rgba(0, 0, 0, 0.083),
+    0 5px 23px rgba(0, 0, 0, 0.15);
 }
 
 /* Content */
@@ -66,42 +90,42 @@ h4 {
   height: 40px;
   overflow: hidden;
 }
-  .floating-action .theme-change {
-    transform: translateY(0);
-    transition: transform 1s;
-  }
-  .floating-action .theme-change.dark-mode {
-    transform: translateY(-40px);
-  }
-  .floating-action svg {
-    display: block;
-    padding: 0.5rem;
-    color: var(--foreground);
-  }
+.floating-action .theme-change {
+  transform: translateY(0);
+  transition: transform 1s;
+}
+.floating-action .theme-change.dark-mode {
+  transform: translateY(-40px);
+}
+.floating-action svg {
+  display: block;
+  padding: 0.5rem;
+  color: var(--foreground);
+}
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-  nav .nav-logo {
-    text-decoration: none;
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--foreground);
-    transition: color 1s;
-  }
-    nav .nav-logo:hover {
-      color: var(--red-accent);
-    }
-  
-  nav .nav-float {
-    display: flex;
-    align-items: center;
-  } 
-    nav .nav-float>a {
-      margin: 1rem;
-    }
+nav .nav-logo {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--foreground);
+  transition: color 1s;
+}
+nav .nav-logo:hover {
+  color: var(--red-accent);
+}
+
+nav .nav-float {
+  display: flex;
+  align-items: center;
+}
+nav .nav-float > a {
+  margin: 1rem;
+}
 
 header {
   min-height: 75%;
@@ -110,10 +134,37 @@ header {
   justify-content: center;
 }
 
-  header h2 {
-    margin-bottom: 2rem;
-  }
+header h2 {
+  margin-bottom: 2rem;
+}
 
 section {
   margin: 2rem 0;
 }
+
+.blurb {
+  display: flex;
+}
+.blurb-heading {
+  text-align: right;
+  margin: 0 1rem;
+}
+.blurb-heading .aside {
+  text-transform: uppercase;
+  color: var(--red-accent);
+  font-weight: bold;
+}
+.blurb-heading small {
+  font-style: italic;
+}
+
+.divider {
+  justify-content: center;
+  align-items: center;
+}
+  .divider .divider-panel {
+    padding: 1rem;
+  }
+    .divider .divider-panel:not(:first-child) {
+      border-left: 1px solid var(--foreground);
+    }
